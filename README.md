@@ -1,2 +1,4 @@
 # Curiosity_Temp_Data
-Analysis of temperature data from the Curiosity Martian rover. 
+Here, I've trained four different machine learning models on ground temperatures from Mars as observed by the Curiosity rover. The dataset was obtained through Kaggle (https://www.kaggle.com/datasets/deepcontractor/mars-rover-environmental-monitoring-station) and cleaned for analysis. This involved stripping nonnumeric characters from the Sol number column in order to get a usable time measurement as well as removing any null values and extreme outliers.  
+With Sol number standing in for the date and air temperature as inputs, I chose to try Bayesian ridge regression, Gaussian regression, kernel ridge regression, and decision trees. 
+Of them all, the decision tree regression seems to be the most consistently accurate, while the kernel ridge regression regretfully missed the mark quite often. 
